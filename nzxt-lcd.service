@@ -1,0 +1,11 @@
+[Unit]
+Description=NZXT Kraken Z LCD updater
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/bin/nzxt_lcd.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
