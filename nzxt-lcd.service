@@ -6,6 +6,7 @@ After=multi-user.target
 ExecStart=/usr/bin/python3 /usr/local/bin/nzxt_lcd.py
 Restart=always
 RestartSec=5
+User=root
 
 [Install]
 WantedBy=default.target
